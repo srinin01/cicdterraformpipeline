@@ -27,8 +27,3 @@ variable "static_web_bucket_name" {
   description = "S3 Bucket to deploy to"
   default     = "static-web-example-bucket-srini01"
 }
-
-variable "artifacts_bucket_name" {
-  description = "S3 Bucket for storing artifacts"
-  default     = "artifact-bucket-srinin01"
-}
