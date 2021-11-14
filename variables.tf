@@ -30,5 +30,5 @@ variable "static_web_bucket_name" {
 
 variable "artifacts_bucket_name" {
   description = "S3 Bucket for storing artifacts"
-  default     = "artifacts-bucket"
+  default     = "artifacts-bucket-srinin01"
 }
