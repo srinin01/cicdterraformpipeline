@@ -5,7 +5,7 @@ variable "env" {
 
 variable "region" {
   description = "AWS region"
-  default     = "es-east-1"
+  default     = "us-east-1"
 }
 
 variable "repository_branch" {
@@ -25,10 +25,10 @@ variable "repository_name" {
 
 variable "static_web_bucket_name" {
   description = "S3 Bucket to deploy to"
-  default     = "static-web-example-bucket"
+  default     = "static-web-example-bucket-srini01"
 }
 
 variable "artifacts_bucket_name" {
   description = "S3 Bucket for storing artifacts"
-  default     = "artifacts-bucket"
+  default     = "artifacts-bucket-srinin01"
 }
