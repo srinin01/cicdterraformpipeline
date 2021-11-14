@@ -17,7 +17,7 @@ EOF
 }
 resource "aws_iam_role_policy" "build_policy" {
   name = "build_policy"
-  role = aws_iam_role.sat_role.id
+  role = aws_iam_role.build_role.id
 
   policy = <<EOF
 {
