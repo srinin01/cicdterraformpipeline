@@ -29,7 +29,7 @@ resource "aws_codepipeline" "static_web_pipeline" {
       owner     = "ThirdParty"
       provider  = "GitHub"
       run_order = 1
-      version   = "1"
+      version   = "2"
     }
   }
   stage {
