@@ -28,6 +28,7 @@ resource "aws_codepipeline" "static_web_pipeline" {
       ]
       owner     = "AWS"
       provider  = "GitHub2"
+      version   = "1"
     }
   }
   stage {
