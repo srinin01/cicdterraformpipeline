@@ -5,12 +5,7 @@ variable "env" {
 
 variable "region" {
   description = "AWS region"
-  default     = "eu-west-1"
-}
-
-variable "env" {
-  description = "Depolyment environment"
-  default     = "dev"
+  default     = "es-east-1"
 }
 
 variable "repository_branch" {
@@ -20,7 +15,7 @@ variable "repository_branch" {
 
 variable "repository_owner" {
   description = "GitHub repository owner"
-  default     = "stojce"
+  default     = "srini"
 }
 
 variable "repository_name" {
