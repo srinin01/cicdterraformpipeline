@@ -26,10 +26,8 @@ resource "aws_codepipeline" "static_web_pipeline" {
       output_artifacts = [
         "SourceArtifact",
       ]
-      owner     = "ThirdParty"
-      provider  = "GitHub (Version 2)"
-      run_order = 1
-      version   = "1"
+      owner     = "AWS"
+      provider  = "GitHub2"
     }
   }
   stage {
