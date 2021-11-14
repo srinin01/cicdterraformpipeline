@@ -10,7 +10,7 @@ variable "region" {
 
 variable "repository_branch" {
   description = "Repository branch to connect to"
-  default     = "develop"
+  default     = "main"
 }
 
 variable "repository_owner" {
