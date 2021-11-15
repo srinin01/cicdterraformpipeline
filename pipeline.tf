@@ -26,7 +26,7 @@ resource "aws_codepipeline" "static_web_pipeline" {
       output_artifacts = [
         "SourceArtifact",
       ]
-      owner     = "AWS"
+      owner     = "ThirdParty"
       provider  = "GitHub2"
       version   = "1"
     }
