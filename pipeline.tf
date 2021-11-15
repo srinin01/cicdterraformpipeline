@@ -12,20 +12,24 @@ resource "aws_codepipeline" "static_web_pipeline" {
 
   stage {
     name = "Source"
-      action {
-        name = "Source"
-        category = "Source"
-        owner = "AWS"
-        provider = "CodeStarSourceConnection"
-        version = "1"
-        output_artifacts = ["SourceArtifact"]
-        configuration = {
-          ConnectionArn = aws_codestarconnections_connection.github.arn
-          FullRepositoryId = "srinin01/terra_test2"
-          BranchName = "main"
-          DetectChanges = "true"
-        }
+
+    action {
+      category = "Source"
+      configuration = {
+        "Branch"               = var.repository_branch
+        "Owner"                = var.repository_owner
+        "PollForSourceChanges" = "false"
+        "Repo"                 = var.repository_name
       }
+      input_artifacts = []
+      name            = "Source"
+      output_artifacts = [
+        "SourceArtifact",
+      ]
+      owner     = "AWS"
+      provider  = "GitHub2"
+      version   = "1"
+    }
   }
   stage {
     name = "Build"
